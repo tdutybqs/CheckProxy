@@ -1,0 +1,13 @@
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\bin\Debug\CheckProxy.exe.config
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\bin\Debug\CheckProxy.exe
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\bin\Debug\CheckProxy.pdb
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\obj\Debug\CheckProxy.csprojAssemblyReference.cache
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\obj\Debug\CheckProxy.Form1.resources
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\obj\Debug\CheckProxy.Properties.Resources.resources
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\obj\Debug\CheckProxy.csproj.GenerateResource.cache
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\obj\Debug\CheckProxy.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\obj\Debug\CheckProxy.exe
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\obj\Debug\CheckProxy.pdb
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\bin\Debug\Leaf.xNet.dll
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\bin\Debug\Leaf.xNet.xml
+C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\obj\Debug\CheckProxy.csproj.CopyComplete
