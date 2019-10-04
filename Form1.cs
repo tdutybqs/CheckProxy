@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Leaf.xNet;
+using System.Threading.Tasks;
 
 namespace CheckProxy
 {
@@ -20,9 +17,9 @@ namespace CheckProxy
         }
 
         List<string> proxy { get; set; } = new List<string>() { };
-        string Link = "https://www.google.ru/";
-        string writePath = @"C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\ClearProxy.txt";
-        string pathFile = @"C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\Proxy.txt";
+        string Link = "https://www.google.ru/"; // Сайт, на котором будут проверяться прокси
+        string writePath = @"C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\ClearProxy.txt"; // Записать хорошие проекси
+        string pathFile = @"C:\Users\Евгений\source\repos\CheckProxy\CheckProxy\Proxy.txt"; // Какие прокси проверить
 
         private void btnDnl_Click(object sender, EventArgs e)
         {
@@ -33,7 +30,7 @@ namespace CheckProxy
         private void btnStart_Click(object sender, EventArgs e)
         {
             label2.Text = "В процессе";
-            for (int i = 0; i < 2100; i++)
+            for (int i = 0; i < proxy.Count; i++)
             {
                 string address = proxy[i].ToString().Replace(" ", "");
                 if (Get(Link, address))
@@ -44,15 +41,7 @@ namespace CheckProxy
                     }
                 }
                 proxy.RemoveAt(i);
-            }
-
-            for (int i = 0; i < proxy.Count; i++)
-            {
-                using (StreamWriter sw = new StreamWriter(pathFile, false, Encoding.Default))
-                {
-                    sw.Write(Environment.NewLine + proxy[i].ToString());
-                }
-            }
+            } 
             label2.Text = "Завершено!";
         }
 
@@ -65,6 +54,7 @@ namespace CheckProxy
             {
                 KeepAlive = true
             };
+            // Выставлены Timeout для подключений
             request.ConnectTimeout = 2000;
             request.UserAgentRandomize();
             request.Proxy = ProxyClient.Parse(ProxyType.HTTP, address);
